@@ -19,11 +19,11 @@ function App() {
   );
 }
 
-function HomePage() {
+function HomePage() { 
   return (
     <main>
       <div className='left'>
-        <img src='../src/assets/Lord-Of-The-Rings-Logo.png' alt='Sticky Image' />
+        <img src='../public/assets/Lord-Of-The-Rings-Logo.png' alt='Sticky Image' />
       </div>
       <div className='right'>
         <section id="firstText">

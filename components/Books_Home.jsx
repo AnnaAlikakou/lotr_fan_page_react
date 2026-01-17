@@ -19,7 +19,7 @@ function Books() {
             <p>{description}</p>
             <Link to={`/book/${book.id}`}>
                 <button className="moreBtn">
-                  <img src='../src/assets/one-ring-to-rule-them-all.png' alt='Ring icon' />
+                  <img src='../public/assets/one-ring-to-rule-them-all.png' alt='Ring icon' />
                   See more...
                 </button>
               </Link>

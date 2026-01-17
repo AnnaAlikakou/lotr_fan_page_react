@@ -8,10 +8,9 @@ import Inner_Books from "./Inner_Books";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/lotr_fan_page_react">
       <Header />
       <Routes>
-        
         <Route path="/" element={<HomePage />} />
         <Route path="/movie/:id" element={<Inner_Movies />} />
         <Route path="/book/:id" element={<Inner_Books />} />

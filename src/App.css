@@ -1,0 +1,190 @@
+main {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  gap: 5rem;
+  padding-top: 8rem;
+}
+
+main .left {
+  height: auto;
+  position: relative;
+}
+
+main .left img {
+  max-width: 300px;
+  height: auto;
+  position: sticky;
+  top: 30px;
+}
+
+/* HOME FIRST TEXT SECTION */
+main .right a {
+  text-decoration: none;
+}
+main .right #firstText p {
+  font-size: 20px;
+}
+main .right #firstText p span {
+  font-weight: 600;
+}
+main .right #firstText p.disclaimer {
+  font-size: 16px;
+  font-style: italic;
+}
+
+main .right .text {
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+/* MORE BUTTON */
+.moreBtn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  /* color: #701e0c; */
+  font-size: 18px;
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  color: #701e0c;
+  
+}
+.moreBtn:hover img {
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+main .right #moviesHome .movie .moreBtn img {
+  width: 50px;
+  /* height: 50px; */
+}
+main .right #booksHome .book .moreBtn img {
+  width: 50px;
+  /* height: 50px; */
+}
+
+/* HOME MOVIES SECTION */
+main .right #moviesHome h2 {
+  font-size: 40px;
+  margin-top: 4rem;
+  font-family: "Ringbearer", serif;
+}
+main .right #moviesHome .movie {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  margin: 2rem auto;
+}
+main .right #moviesHome .movie:nth-child(4) {
+  flex-direction: row-reverse;
+}
+main .right #moviesHome .movie h3 {
+  font-size: 30px;
+  font-family: "Ringbearer", serif;
+}
+main .right #moviesHome .movie span {
+  font-size: 16px;
+  color: #701e0c;
+}
+main .right #moviesHome .movie p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+main .right #moviesHome .movie img {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+}
+
+/* HOME BOOKS SECTION */
+main .right #booksHome h2 {
+  font-size: 40px;
+  margin-top: 4rem;
+  font-family: "Ringbearer", serif;
+}
+main .right #booksHome .book {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 3rem;
+  align-items: center;
+  margin: 2rem auto;
+}
+main .right #booksHome .book:nth-child(4) {
+  flex-direction: row;
+}
+main .right #booksHome .book h3 {
+  font-size: 30px;
+  font-family: "Ringbearer", serif;
+}
+main .right #booksHome .book span {
+  font-size: 16px;
+  color: #701e0c;
+}
+main .right #booksHome .book p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+main .right #booksHome .book img {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+}
+
+@media (max-width: 1024px) {
+  main {
+    flex-direction: column;
+    margin: auto 2rem;
+    gap: 3rem;
+    padding-top: 3rem;
+  }
+  main .left {
+    margin: auto;
+  }
+  main .left img {
+    width: 100%;
+  }
+  main .right #moviesHome h2 {
+    font-size: 25px;
+  }
+  main .right #moviesHome .movie h3 {
+    font-size: 20px;
+  }
+  main .right #moviesHome .movie {
+    flex-direction: column;
+  }
+  main .right #moviesHome .movie:nth-child(4) {
+    flex-direction: column;
+  }
+  main .right #booksHome h2 {
+    font-size: 25px;
+  }
+  main .right #booksHome .book h3 {
+    font-size: 20px;
+  }
+  main .right #booksHome .book {
+    flex-direction: column;
+  }
+  main .right #booksHome .book:nth-child(4) {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1500px) {
+  main {
+    max-width: 1200px;
+    margin: 0 3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  
+}

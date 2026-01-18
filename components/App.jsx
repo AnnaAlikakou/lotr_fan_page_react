@@ -1,21 +1,21 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import '../src/App.css';
+import { Routes, Route } from "react-router-dom"; 
 import Header from "./Header";
 import Movies from "./Movies_Home";
 import Books from "./Books_Home";
 import Inner_Movies from "./Inner_Movies"; 
 import Inner_Books from "./Inner_Books";
+import '../src/App.css';
 
 function App() {
   return (
-    <Router basename="/lotr_fan_page_react">
+    <>
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/movie/:id" element={<Inner_Movies />} />
         <Route path="/book/:id" element={<Inner_Books />} />
       </Routes>
-    </Router>
+    </>
   );
 }
 

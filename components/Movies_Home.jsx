@@ -19,7 +19,7 @@ function Movies() {
             <p>{description}</p>
             <Link to={`/movie/${movie.id}`}>
                 <button className="moreBtn">
-                  <img src='../public/assets/one-ring-to-rule-them-all.png' alt='Ring icon' />
+                  <img src={`${import.meta.env.BASE_URL}assets/one-ring-to-rule-them-all.png`} alt='Ring icon' />
                   See more...
                 </button>
               </Link>

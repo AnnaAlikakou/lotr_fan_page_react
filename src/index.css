@@ -25,7 +25,7 @@ body {
 
 /* HEADER HERE */
 header {
-  background-image: url("./assets/middle-earth-map.jpg");
+  background-image: url("/lotr_fan_page_react/assets/middle-earth-map.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -127,7 +127,7 @@ nav ul::after {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url("./assets/one-ring-to-rule-them-all.png");
+  background-image: url("/lotr_fan_page_react/assets/one-ring-to-rule-them-all.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -168,7 +168,7 @@ footer {
 }
 
 .footerMain {
-  background-image: url("./assets/fellowship.svg");
+  background-image: url("/lotr_fan_page_react/assets/fellowship.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

@@ -19,11 +19,11 @@ function App() {
   );
 }
 
-function HomePage() { 
+function HomePage() {
   return (
     <main>
       <div className='left'>
-        <img src='../public/assets/Lord-Of-The-Rings-Logo.png' alt='Sticky Image' />
+        <img src={`${import.meta.env.BASE_URL}assets/Lord-Of-The-Rings-Logo.png`} alt='Sticky Image' />
       </div>
       <div className='right'>
         <section id="firstText">
